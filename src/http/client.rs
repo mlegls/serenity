@@ -269,7 +269,7 @@ impl Http {
         let built = builder.build().expect("Cannot build reqwest::Client");
 
         let trimmed = token.trim();
-        let token = token.to_string()
+        let token = token.to_string();
 
         Self::new(Arc::new(built), &token)
     }
